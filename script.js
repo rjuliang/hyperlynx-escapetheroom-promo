@@ -4,4 +4,5 @@ var jvideo = $("#vid");
 jvideo.on("ended", function() {
   console.log("End of video");
   $("#vid").hide();
+  $(".choices").show();
 });
