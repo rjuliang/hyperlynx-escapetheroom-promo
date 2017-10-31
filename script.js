@@ -4,5 +4,10 @@ var jvideo = $("#vid");
 jvideo.on("ended", function() {
   console.log("End of video");
   $("#vid").hide();
-  $(".choices").show();
+  $("#choices").show();
+});
+
+$("#one, #two").on("click", function() {
+  $("#choices").hide();
+  $("#vidend").show();
 });
