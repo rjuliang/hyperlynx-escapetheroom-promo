@@ -7,6 +7,12 @@ var vindown = $("#vindow");
 var videoend = document.getElementById('vidend');
 var viden = $("#vidend");
 
+var table = document.getElementById('desk');
+var tab = $("#desk");
+
+var off = document.getElementById('office');
+var offc = $("#office");
+
 jvideo.on("ended", function() {
   console.log("End of video");
   $("#vid").hide();
@@ -49,4 +55,14 @@ $("#three").on("click", function(){
 $("#four").on("click", function(){
   $("#last-choice").hide();
   $("#office").show();
+});
+
+tab.on("ended", function() {
+  $("#desk").hide();
+  $("#info").show();
+});
+
+offc.on("ended", function() {
+  $("#office").hide();
+  $("#info").show();
 });
