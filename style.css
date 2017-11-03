@@ -4,6 +4,8 @@
 #unlocked,
 #last-choice,
 #desk,
-#office {
+#office,
+#info,
+.choice-screen {
   display: none;
 }
