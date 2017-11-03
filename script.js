@@ -13,6 +13,8 @@ var tab = $("#desk");
 var off = document.getElementById('office');
 var offc = $("#office");
 
+var $endScreen = $("#end-screen");
+
 jvideo.on("ended", function() {
   console.log("End of video");
   $("#vid").hide();
