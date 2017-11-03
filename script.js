@@ -5,12 +5,11 @@ var vin = document.getElementById('vindow');
 var vindown = $("#vindow");
 
 var videoend = document.getElementById('vidend');
-var viden = $("vidend");
+var viden = $("#vidend");
 
 jvideo.on("ended", function() {
   console.log("End of video");
   $("#vid").hide();
-  $("#vid").currentTime = 0;
   $("#choices").show();
 });
 
@@ -20,19 +19,34 @@ $("#one").on("click", function(){
   $("#vindow").show();
 });
 
+$("#two").on("click", function(){
+  $("#choices").hide();
+  $("#vidend").show();
+});
+
 vindown.on("ended", function() {
   console.log("vindown ended");
   $("#vindow").hide();
   $("#unlocked").show();
-})
+});
 
 $("#unlocked").on("click", function(){
   $("#unlocked").hide();
-  $("#vid").show();
+  $("#vidend").show();
 });
 
-jvideo.on("ended", function() {
-  console.log("End of video");
-  $("#vid").hide();
-  $("#choices").show();
+viden.on("ended", function() {
+  console.log("#vidend");
+  $("#vidend").hide();
+  $("#last-choice").show();
+});
+
+$("#three").on("click", function(){
+  $("#last-choice").hide();
+  $("#desk").show();
+});
+
+$("#four").on("click", function(){
+  $("#last-choice").hide();
+  $("#office").show();
 });
