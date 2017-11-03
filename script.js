@@ -12,3 +12,15 @@ jvideo.on("ended", function() {
   $("#vid").hide();
   $("#choices").show();
 });
+
+$("#one").on("click", function(){
+  console.log("clicked");
+  $("#choices").hide();
+  $("#vindow").show();
+});
+
+vindown.on("ended", function() {
+  console.log("vindown ended");
+  $("#vindow").hide();
+  $("#unlocked").show();
+})
