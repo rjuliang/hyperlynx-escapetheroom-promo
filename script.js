@@ -4,7 +4,7 @@ var jvideo = $("#vid");
 var vin = document.getElementById('vindow');
 var vindown = $("#vindow");
 
-var video-end = document.getElementById('vidend');
+var videoend = document.getElementById('vidend');
 var viden = $("vidend");
 
 jvideo.on("ended", function() {
@@ -16,7 +16,7 @@ jvideo.on("ended", function() {
 $("#one").on("click", function() {
   $("#choices").hide();
   $("#vindow").show();
-})
+});
 
 $("#two").on("click", function() {
   $("#choices").hide();
