@@ -10,6 +10,7 @@ var viden = $("vidend");
 jvideo.on("ended", function() {
   console.log("End of video");
   $("#vid").hide();
+  $("#vid").currentTime = 0;
   $("#choices").show();
 });
 
@@ -24,3 +25,14 @@ vindown.on("ended", function() {
   $("#vindow").hide();
   $("#unlocked").show();
 })
+
+$("#unlocked").on("click", function(){
+  $("#unlocked").hide();
+  $("#vid").show();
+});
+
+jvideo.on("ended", function() {
+  console.log("End of video");
+  $("#vid").hide();
+  $("#choices").show();
+});
