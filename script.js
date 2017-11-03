@@ -12,38 +12,3 @@ jvideo.on("ended", function() {
   $("#vid").hide();
   $("#choices").show();
 });
-
-$("#one").on("click", function() {
-  $("#choices").hide();
-  $("#vindow").show();
-});
-
-$("#two").on("click", function() {
-  $("#choices").hide();
-  $("#vidend").show();
-});
-
-vindown.on("ended", function(){
-  $("#vindow").hide();
-  $("#unlocked").show();
-});
-
-$("#door").on("click", function() {
-  $("unlocked").hide();
-  $("#vidend").show();
-});
-
-viden.on("ended", function(){
-  $("#vidend").hide();
-  $("#last-choice").show();
-});
-
-$("three").on("click", function(){
-  $("#last-choice").hide();
-  $("#desk").show();
-});
-
-$("four").on("click", function() {
-  $("#last-choice").hide();
-  $("office").show();
-})
