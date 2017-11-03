@@ -24,12 +24,14 @@ jvideo.on("ended", function() {
 $("#one").on("click", function(){
   console.log("clicked");
   $("#choices").hide();
-  $("#vindow").show();
+  vindown.show();
+  vin.play();
 });
 
 $("#two").on("click", function(){
   $("#choices").hide();
   $("#vidend").show();
+  videoend.play();
 });
 
 vindown.on("ended", function() {
@@ -52,11 +54,13 @@ viden.on("ended", function() {
 $("#three").on("click", function(){
   $("#last-choice").hide();
   $("#desk").show();
+  table.play();
 });
 
 $("#four").on("click", function(){
   $("#last-choice").hide();
   $("#office").show();
+  off.play();
 });
 
 tab.on("ended", function() {
