@@ -96,6 +96,7 @@ video {
 #unlocked,
 #last-choice,
 #desk,
+<<<<<<< HEAD
 #office {
     display: none;
   }
@@ -201,4 +202,10 @@ section h1 {
     width: 45.8%;
   }
 
+=======
+#office,
+#info,
+.choice-screen {
+  display: none;
+>>>>>>> b83e020e56311fbaecebd54a7ef348793c4dee26
 }
