@@ -79,8 +79,10 @@ img {
 }
 
 .story {
-  margin-top: 8px;
-  margin-bottom: 25px;
+  margin: 8px 25px 25px 25px;
+  text-align: center;
+  display: block;
+  width: 100%;
 }
 
 video {
@@ -96,14 +98,53 @@ video {
 #unlocked,
 #last-choice,
 #desk,
-<<<<<<< HEAD
 #office {
     display: none;
   }
 
+#office,
+#info,
+.choice-screen {
+  display: none;
+ }
+
+#info {
+  font-size: 140%;
+  background-color: rgba(254, 231, 215, 0.7);
+  margin-left: 25px;
+  margin-right: 25px;
+  padding: 10px 15px;
+}
+
+#unlocked {
+  width: 100%;
+}
+
 .choice {
   width: auto;
   height: auto;
+}
+
+button {
+  background-color: #364f4d; /* Green */
+  border: none;
+  color: #fff8e5;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  font-family: "Nyala", Arial;
+  width: 100%;
+  font-size: 140%;
+  margin-top: 15px;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #fff8e5;
+  color: #364f4d;
 }
 
 
@@ -168,6 +209,10 @@ section h1 {
     width: 100%;
   }
 
+  img {
+    width: 50px;
+  }
+
   .instagram {
     margin-left: 600px;
   }
@@ -176,22 +221,29 @@ section h1 {
     margin-left: 15px;
   }
 
-  .info {
-    margin-left: 20px;
-    font-size: 270%;
-  }
-
   main {
     max-width: 1200px;
     margin: 0 auto;
   }
 
+
   .story {
     width: 100%;
   }
 
-  img {
-    width: 50px;
+  button {
+    width: 50%;
+  }
+/*this info is for the video buttons choices*/
+  #info {
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+/*/////////////////////////////////////////////*/
+
+  .info {
+    margin-left: 20px;
+    font-size: 270%;
   }
 
   section:nth-of-type(even) {
@@ -202,10 +254,4 @@ section h1 {
     width: 45.8%;
   }
 
-=======
-#office,
-#info,
-.choice-screen {
-  display: none;
->>>>>>> b83e020e56311fbaecebd54a7ef348793c4dee26
 }
