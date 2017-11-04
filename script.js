@@ -43,6 +43,7 @@ vindown.on("ended", function() {
 $("#unlocked").on("click", function(){
   $("#unlocked").hide();
   $("#vidend").show();
+  videoend.play();
 });
 
 viden.on("ended", function() {
