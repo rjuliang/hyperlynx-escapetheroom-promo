@@ -1,0 +1,11 @@
+#choices,
+#vidend,
+#vindow,
+#unlocked,
+#last-choice,
+#desk,
+#office,
+#info,
+.choice-screen {
+  display: none;
+}
